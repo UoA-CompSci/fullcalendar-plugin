@@ -41,7 +41,7 @@ fc.sourceNormalizers.push(function(sourceOptions) {
 
 
     if(!uoaCalendarPort)
-        sourceOptions.uoaCalendarPort = 8000;
+        sourceOptions.uoaCalendarPort = 80;
 
 	// Use the Url parameter if none was specified
 	if (!uoaCalendarId) {
