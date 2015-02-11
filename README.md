@@ -1,7 +1,7 @@
 README
 ======
 
-This project defines a module for the `fullcalendar` JavaScript library that allows it to connect to the UoACalendar backend.
+This project defines a plugin for the [Fullcalendar](http://fullcalendar.io/) JavaScript library that allows it to connect to the UoACalendar backend.
 
 You may install this module using bower:
 
@@ -45,9 +45,9 @@ $(document).ready(function() {
 You may obtain an API token like this:
 
 ```bash
-$ curl -X POST -d "username=<USERNAME>&password=<PASSWORD>" calendar.auckland.ac.nz:5000/api-token-auth
+$ curl -X POST -d "username=<USERNAME>&password=<PASSWORD>" sitcalprd01.its.auckland.ac.nz/api-token-auth
 ```
 
->> Note that this will generate a new token and invalidate your old one if you already have one.
+> Note that this will generate a new token and invalidate your old one if you already have one.
 
 
