@@ -15,8 +15,13 @@ Dependencies
 Now you should have all the required js/css files. This includes the standard `fullcalendar.js` and `fullcalendar.css`, in addition to `uoacal.js`.
 
 ```
-<script type='text/javascript' src='fullcalendar/dist/fullcalendar.min.js'></script>
-<script type='text/javascript' src='fullcalendar-uoa/uoacal.js'></script>
+<link href="bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+<link href="bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="bower_components/fullcalendar-uoa/uoacal.js"></script>
 ```
 
 Writting the code
@@ -27,11 +32,11 @@ It's time to initialize your calendar in JavaScript. You can do so as in this ex
 ```javascript
 $(document).ready(function() {
     $('#calendar').fullCalendar({
-        uoaCalendarApiToken: '<YOUR API TOKEN>',
-        uoaCalendarHost: 'calendar.auckland.ac.nz',
-        uoaCalendarPort: '5000',
         events: {
-            uoaCalendarId: '<YOUR CALENDAR ID>'
+            uoaCalendarId: '<YOUR CALENDAR ID>',
+            uoaCalendarApiToken: '<YOUR API TOKEN>',
+            uoaCalendarHost: 'calendar.auckland.ac.nz',
+            uoaCalendarPort: '5000'
         }
     });
 });
