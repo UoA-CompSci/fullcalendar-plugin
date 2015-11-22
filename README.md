@@ -35,18 +35,14 @@ $(document).ready(function() {
         events: {
             uoaCalendarId: '<YOUR CALENDAR ID>',
             uoaCalendarApiToken: '<YOUR API TOKEN>',
-            uoaCalendarHost: 'calendar.auckland.ac.nz',
-            uoaCalendarPort: '5000'
+            uoaCalendarHost: 'diaryapi.auckland.ac.nz',
+            uoaCalendarPort: '345'
         }
     });
 });
 ```
 
-You may obtain an API token like this:
-
-```bash
-$ curl -X POST -d "username=<USERNAME>&password=<PASSWORD>" sitcalprd01.its.auckland.ac.nz/api-token-auth
-```
+You may obtain an API token by logging into diaryapi.auckland.ac.nz then click your email address and select "API Token" from the menu. (TODO: screenshot)
 
 > Note that this will generate a new token and invalidate your old one if you already have one.
 
