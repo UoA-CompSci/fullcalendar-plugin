@@ -42,8 +42,8 @@ $(document).ready(function() {
 });
 ```
 
-You may obtain an API token by logging into diaryapi.auckland.ac.nz then click your email address and select "API Token" from the menu. (TODO: screenshot)
+You may obtain an API token by logging into diaryapi.auckland.ac.nz then click your email address and select "API Token" from the menu. 
 
 > Note that this will generate a new token and invalidate your old one if you already have one.
 
-
+> After obtaining the token, please don't forget to close all browser windows to completely log out from diaryapi.auckland.ac.nz
